@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="box"></div>
+    <div class="holder">
+    <h1 class="title">Welcome</h1>
+    <p class="text">With supporting text below as a natural lead-in to additional content.</p>
+    <button class="btn">See transactions</button>
+    </div>
+    <div class="box">You have 100 transactions</div>
+  </div>
+  <div class="wrap">
+    <div class="card">
+      <p class="number">123</p>
+      <p class="item">Income</p>
+      <button class="buttons">See all</button>
+    </div>
+    <div class="card">
+      <p class="number">234</p>
+      <p class="item">Investments</p>
+      <button class="buttons">See all</button>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="card">
+      <p class="number">345</p>
+      <p class="item">Outcome</p>
+      <button class="buttons">See all</button>
+    </div>
+    <div class="card">
+      <p class="number">345</p>
+      <p class="item">Loans</p>
+      <button class="buttons">See all</button>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="tabs">
+    <button *ngFor="let k of alexCh" (click)="showObj( k )" class="button">{{ k }}</button>
+  </div>
+  <div class="title">
+    <h1>Name</h1>
+    <h1>Phone</h1>
+  </div>
+  <div *ngFor="let k of listShow" class="table">
+    <div class="column">
+      <p>{{ k.name.first }} {{ k.name.last }}</p>
+    </div>
+    <div class="column">
+      <p>{{ k.phone }}</p>
+    </div>
+  </div>
+</div>
+
+
+
+
